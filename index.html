@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Unbounded', cursive;
+    }
+
+    .pricing-container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 80px;
+    }
+
+    .pricing-plan-1 {
+      border: solid #000 2px;
+      border-radius: 10px;
+      background-color: #DBDFEA;
+      text-align: center;
+    }
+
+    .pricing-plan-2 {
+      border: solid #000 2px;
+      border-radius: 10px;
+      background-color: #FFF7D4;
+      text-align: center;
+    }
+
+    .pricing-plan-3 {
+      border: solid #000 2px;
+      border-radius: 10px;
+      background-color: #D4ADFC;
+      text-align: center;
+    }
+
+    .plan-title-1 {
+      font-size: 47px;    
+      background-color: #8294C4;
+      font-weight: bolder;
+    }
+
+    .plan-title-2{
+      font-size: 47px;    
+      background-color: goldenrod;
+      font-weight: bolder;
+    }
+
+    .plan-title-3 {
+      font-size: 47px;    
+      background-color: #1D267D;
+      font-weight: bolder;
+      color: goldenrod;
+    }
+
+    .plan-price-1 {
+      background-color: #ACB1D6;
+    }
+
+    .plan-price-2 {
+      font-weight: 600;
+      background-color: #FFD95A;
+    }
+
+    .plan-price-3 {
+      font-weight: bolder;
+      background-color: #5C469C;
+      color: goldenrod;
+    }
+
+    .plan-button-1 {
+      background-color: #ACB1D6;
+      border-radius: 5px;
+      border: 2px solid #ACB1D6;
+      align-items: center;
+      margin: 10px;
+      font-family: 'Unbounded', cursive;
+    }
+
+    .plan-button-2 {
+      background-color: #4C3D3D;
+      color: goldenrod;
+      border-radius: 5px;
+      border: 2px solid #4C3D3D;
+      align-items: center;
+      margin: 10px;
+      font-family: 'Unbounded', cursive;
+    }
+
+    .plan-button-3 {
+      background-color: #FFD95A;
+      border-radius: 5px;
+      border: 2px solid black;
+      align-items: center;
+      margin: 10px;
+      font-family: 'Unbounded', cursive;
+    }
+
+    ul {
+      list-style: none;
+      margin-right: 50px;
+    }
+    
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan-1">
+      <div class="plan-title-1">Basic</div>
+      <div class="plan-price-1">$9.99 /month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button-1">Sign Up</a>
+    </div>
+    <div class="pricing-plan-2">
+      <div class="plan-title-2">Standard</div>
+      <div class="plan-price-2">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button-2">Sign Up</a>
+    </div>
+    <div class="pricing-plan-3">
+      <div class="plan-title-3">Premium</div>
+      <div class="plan-price-3">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button-3">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
